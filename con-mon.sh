@@ -6,7 +6,7 @@ timestamp() {
 
 
 echo "$(timestamp) connection monitor"
-omxplayer /home/rb/dev/sounds/willBadGuy/starting.mp3 > /dev/null
+omxplayer /home/rb/dev/connection-monitor/sounds/willBadGuy/starting.mp3 > /dev/null
 
 statusSayed=""
 IP='ya.ru'
@@ -21,7 +21,7 @@ if [ $rc -eq 0 ] ; then
 counter=0
    if [ "$statusSayed" != "ping success" ] ; then 		
 	echo "$(timestamp) ping success"
-        omxplayer /home/rb/dev/sounds/willBadGuy/connection_success.mp3 > /dev/null
+        omxplayer /home/rb/dev/connection-monitor/sounds/willBadGuy/connection_success.mp3 > /dev/null
 	statusSayed="ping success"
    fi
 
@@ -35,7 +35,7 @@ else
 
    if [ $counter -eq 0 ] ; then  
 	counter=15
-        omxplayer /home/rb/dev/sounds/willBadGuy/no_connection.mp3 > /dev/null
+        omxplayer /home/rb/dev/connection-monitor/sounds/willBadGuy/no_connection.mp3 > /dev/null
    else
 	counter=$((counter-1))
    fi
