@@ -8,7 +8,8 @@ timestamp() {
 echo "$(timestamp) connection monitor"
 omxplayer /home/rb/dev/connection-monitor/sounds/willBadGuy/starting.mp3 > /dev/null
 
-IP='ya.ru'
+#IP='ya.ru'
+IP='T-2.primorye.net.ru'
 counter=0
 ipMsgCounter=0
 
