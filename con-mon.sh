@@ -13,6 +13,8 @@ IP='T-2.primorye.net.ru'
 counter=0
 ipMsgCounter=0
 
+echo "ping $IP"
+
 while true; do 
   ping -q -c 1 ya.ru > /dev/null 2>/dev/null
   rc=$?
